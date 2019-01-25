@@ -8,12 +8,12 @@
 
     <header class="main-header">
       <section class="main-header-top">
-        <a class="main-logo">Техномарт</a>
+        <a href="/" class="main-logo">Техномарт</a>
         <form name="searchform">Поиск</form>
-        <div class="main-header-buttons">
-          <a href="#">Закладки</a>
-          <a href="#">Корзина</a>
-          <a href="#">Оформить заказ</a>
+        <div class="main-header-links">
+          <a href="#" class="header-link header-link-bookmark">Закладки</a>
+          <a href="#" class="header-link header-link-basket">Корзина</a>
+          <a href="#" class="header-link header-link-submit">Оформить заказ</a>
         </div>
       </section>
       <section class="main-header-site-desc">
@@ -23,12 +23,16 @@
           <p>г.Санкт-Петербург, ул. Б. Конюшенная д.19/8</p>
         </address>
       </section>
-      <section class="main-header-user">
-        <a href="#" class="main-header-user-name">Равшан Джамшутович</a>
-        <a href="#" class="main-header-user-logout">Выйти</a>
-        <a href="#" class="main-header-user-actions">Мои заказы</a>
-        <a href="#" class="main-header-user-actions">Личный кабинет</a>
-      </section>
+      <div class="main-header-user">
+        <ul class="auth-menu">
+          <li><a href="#" class="auth-menu-user-name">Равшан Джамшутович</a></li>
+          <li><a href="#" class="auth-menu-user-logout"><span class="hidden">Выйти</span></a></li>
+        </ul>
+        <ul class="order-menu">
+          <li><a href="#">Мои заказы</a></li>
+          <li><a href="#">Личный кабинет</a></li>
+        </ul>
+      </div>
       <nav class="main-header-navigation">
         <ul>
           <li><a>Главная</a></li>
@@ -54,7 +58,7 @@
         <form class="filter">Фильтр <!-- Разметка формы фильтра -->
         </form>
         <section class="sort">
-          <span class="sort-label">Сортировать: </p>
+          <span class="sort-label">Сортировать: </span>
           <span class="sort-links">
             <a href="#">По цене</a>
             <a href="#">По типу</a>
@@ -109,7 +113,7 @@
             <a href="#">В закладки</a>
           </div>
           <img src="/img/bfg6000.jpeg" alt="Перфоратор BOSCH BFG 6000" width="200" height="100">
-          <span class="item-rice">30 500 р.</span>
+          <span class="item-price">30 500 р.</span>
           <span class="item-price-sale">25 500 р.</span>
         </article>
         <article class="item-cart">
@@ -150,14 +154,16 @@
           <img src="/img/bfg3000.jpeg" alt="Перфоратор BOSCH BFG 3000" width="200" height="100">
           <span class="item-price-sale">12 500 р.</span>
         </article>
-        <a>1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">Следующая</a>
-        <article class="item-about">
-          <h4>Пара слов о перфораторах</h4>
+        <div class="pagination">
+          <a>1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">Следующая</a>
+        </div>
+        <section class="item-about">
+          <h3>Пара слов о перфораторах</h3>
           <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-        </article>
+        </section>
       </section>
     </main>
 
