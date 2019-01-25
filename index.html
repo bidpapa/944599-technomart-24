@@ -6,7 +6,88 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header class="main-header">
+    	<section class="main-header-top">
+    		<a href="/" class="main-logo">Техномарт</a>
+    		<form name="searchform">Поиск</form>
+    		<button class="main-header-button">Закладки</button>
+    		<button class="main-header-button">Корзина</button>
+    		<button class="main-header-button-submit">Оформить заказ</button>
+    	</section>
+    	<section class="main-header-site-desc">
+    		<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+    		<address>+7(812)555-05-55<br>г.Санкт-Петербург, ул. Б. Конюшенная д.19/8</address>
+      </section>
+      <ul class="main-header-user-navigation">
+    		<li><button>Войти</button></li>
+    		<li><button>Регистрация</button></li>
+    	</ul>
+    	<nav class="main-header-navigation">
+    		<ul>
+    			<li><a href="/">Главная</a></li>
+    			<li><a href="/company.html">Компания</a></li>
+    			<li><a href="/catalog.html">Каталог</a></li>
+    			<li><a href="/news.html">Новости</a></li>
+    			<li><a href="/special.html">Спецпредложения</a></li>
+    			<li><a href="/delivery.html">Доставка</a></li>
+    			<li><a href="/contacts.html">Контакты</a></li>
+    		</ul>
+    	</nav>
+    </header>
+
+    <main>
+        <!-- Тут будут идти необязательные сейчас разделы для разметки -->
+    	<section class="company">
+    		<article class="company-aboutus">
+    			<h2>Компания "Техномарт"</h2>
+    			<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+          Техномарт работает со многими транспортными компаниями: </p>
+    			<ul class="company-list-partners">
+    				<li><a href="http://dellinii.com/">Деловые линии</a></li>
+    				<li><a href="http://trading.com/">Автотрейдинг</a></li>
+    				<li><a href="http://zeldor.com/">ЖелДорЭкспецидия</a></li>
+    		  </ul>
+    		  <a href="aboutus.html" class="button aboutus">Подробнее о компании</a>
+    		</article>
+    		<section class="company-contacts">
+    			<h2>Контакты</h2>
+    			<p>Вы можете забрать товар сами, заехав в наш офис</p>
+    			<div class="company-contacts-map"><!-- Здесь будет карта --></div>
+    			<a href="writeus.html" class="button contacts">Заблудились? Напишите нам</a>
+    		</section>
+    	</section>
+    </main>
+
+    <footer class="main-footer">
+    	<section class="main-footer-top">
+    		<a href="/" class="main-logo">Техномарт</a>
+    		<address>г.Санкт-Петербург, ул. Б. Конюшенная д.19/8<br>+7(812)555-05-55</address>
+    		<ul class="main-footer-navigation-summary">
+    			<li><a href="/company.html">Компания</a></li>
+          <li><a href="/news.html">Новости</a></li>
+          <li><a href="/catalog.html">Каталог</a></li>
+          <li><a href="/delivery.html">Доставка</a></li>
+          <li><a href="/contacts.html">Контакты</a></li>
+    		</ul>
+    		<ul class="main-footer-navigation-offers">
+    			<li><a href="/materials.html">Материалы</a></li>
+    			<li><a href="/technic.html">Техника</a></li>
+    			<li><a href="/instrument.html">Инструмент</a></li>
+    			<li><a href="/specialoffers.html">Спецпредложения</a></li>
+    		</ul>
+    	</section>
+    	<section class="main-footer-bottom">
+    		<p>2010-2019 Компания "Техномарт". Все права защищены</p>
+    		<ul class="main-footer-sociallinks">
+    			<li><a href="http://vk.com">ВК</a></li>
+    			<li><a href="http://facebook.com">Фейсбук</a></li>
+    			<li><a href="http://instagram.com">Инстаграм</a></li>
+    		</ul>
+    		<p>Обратная связь:<br><span class="main-footer-span">mail@htmlacademy.ru</span></p>
+    		<p>Разработано<br><span class="main-footer-span">htmlacademy.ru</span></p>
+    	</section>
+    </footer>
 
   </body>
 </html>
