@@ -55,7 +55,30 @@
       </section>
       <section class="item">
         <h1>Перфораторы</h1>
-        <form class="filter">Фильтр <!-- Разметка формы фильтра -->
+        <form class="filter">
+          <span class="filter-label">Фильтр</span>
+            <span class="filter-section-header">Цена</span>
+              <input type="range" min="0" max="30000" step="100" value="25000" name="price-input" id="price-input">
+              <span class="range-price left">0</span>
+              <span>-</span>
+              <span class="range-price right">30000</span>
+            <span class="filter-section-header">Производители</span>
+              <input type="checkbox" id="bosch" name="bosch" checked>
+              <label for="bosch">Bosch</label>
+              <input type="checkbox" id="interskol" name="interskol">
+              <label for="interskol">Интерскол</label>
+              <input type="checkbox" id="makita" name="makita" checked>
+              <label for="makita">Makita</label>
+              <input type="checkbox" id="dewalt" name="dewalt">
+              <label for="dewalt">DeWalt</label>
+              <input type="checkbox" id="hitachi" name="hitachi">
+              <label for="hitachi">Hitachi</label>
+            <span class="filter-section-header">Питание</span>
+              <input type="radio" id="acc" name="charge-type" checked>
+              <label for="acc">Аккумуляторные</label>
+              <input type="radio" id="net" name="charge-type">
+              <label for="net">Сетевые</label>
+          <input type="submit" value="Показать">
         </form>
         <section class="sort">
           <span class="sort-label">Сортировать: </span>
@@ -195,7 +218,7 @@
           <li><a href="#">Фейсбук</a></li>
           <li><a href="#">Инстаграм</a></li>
         </ul>
-        <p>Обратная связь: <a href="#" class="main-footer-link">@htmlacademy.ru</a></p>
+        <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru" class="main-footer-link">mail@htmlacademy.ru</a></p>
         <p>Разработано <a href="https://htmlacademy.ru/intensive/htmlcss" class="main-footer-link">htmlacademy.ru</a></p>
       </section>
     </footer>
