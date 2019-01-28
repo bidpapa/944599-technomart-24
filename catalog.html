@@ -53,53 +53,54 @@
         <a href="#">Инструмент</a>
         <a>Перфораторы</a>
       </section>
-      <section class="item">
-        <h1>Перфораторы</h1>
+      <h1>Перфораторы</h1>
+      <section class="filter">
+        <h2>Фильтр</h2>
         <form class="filter">
-          <fieldset name="filter">
-            <legend class="filter-label">Фильтр</legend>
-            <fieldset name="price">
-              <legend class="filter-section-header">Цена</legend>
-              <input type="range" min="0" max="30000" step="100" value="25000" name="price-input" id="price-input">
-              <span class="range-price left">0</span>
-              <span>-</span>
-              <span class="range-price right">30000</span>
-            </fieldset>
-            <fieldset name="manufacturers">
-              <legend class="filter-section-header">Производители</legend>
-              <input type="checkbox" id="bosch" name="bosch" checked>
-              <label for="bosch">Bosch</label>
-              <input type="checkbox" id="interskol" name="interskol">
-              <label for="interskol">Интерскол</label>
-              <input type="checkbox" id="makita" name="makita" checked>
-              <label for="makita">Makita</label>
-              <input type="checkbox" id="dewalt" name="dewalt">
-              <label for="dewalt">DeWalt</label>
-              <input type="checkbox" id="hitachi" name="hitachi">
-              <label for="hitachi">Hitachi</label>
-            </fieldset>
-            <fieldset name="charge">
-              <legend class="filter-section-header">Питание</legend>
-              <input type="radio" id="acc" name="charge-type" checked>
-              <label for="acc">Аккумуляторные</label>
-              <input type="radio" id="net" name="charge-type">
-              <label for="net">Сетевые</label>
-            </fieldset>
-            <input type="submit" value="Показать">
+          <fieldset name="price">
+            <legend class="filter-section-header">Цена</legend>
+            <input type="range" min="0" max="30000" step="100" value="25000" name="price-input" id="price-input">
+            <span class="range-price left">0</span>
+            <span>-</span>
+            <span class="range-price right">30000</span>
+          </fieldset>
+          <fieldset name="manufacturers">
+            <legend class="filter-section-header">Производители</legend>
+            <input type="checkbox" id="bosch" name="bosch" checked>
+            <label for="bosch">Bosch</label>
+            <input type="checkbox" id="interskol" name="interskol">
+            <label for="interskol">Интерскол</label>
+            <input type="checkbox" id="makita" name="makita" checked>
+            <label for="makita">Makita</label>
+            <input type="checkbox" id="dewalt" name="dewalt">
+            <label for="dewalt">DeWalt</label>
+            <input type="checkbox" id="hitachi" name="hitachi">
+            <label for="hitachi">Hitachi</label>
+          </fieldset>
+          <fieldset name="charge">
+            <legend class="filter-section-header">Питание</legend>
+            <input type="radio" id="acc" name="charge-type" checked>
+            <label for="acc">Аккумуляторные</label>
+            <input type="radio" id="net" name="charge-type">
+            <label for="net">Сетевые</label>
+          </fieldset>
+          <input type="submit" value="Показать">
           </fieldset>
         </form>
-        <section class="sort">
-          <header class="sort-label">Сортировать: </header>
+      </section>
+      <section class="items">
+        <div class="sort">
+          <span class="sort-label">Сортировать: </span>
           <div class="sort-links">
             <a href="#">По цене</a>
             <a href="#">По типу</a>
             <a href="#">По функционалу</a>
-            <div class="sort-links-arrows">
-              <a href="#">По возрастанию</a>
-              <a href="#">По убыванию</a>
-            </div>
           </div>
-        </section>
+          <div class="sort-links-arrows">
+            <a href="#">По возрастанию</a>
+            <a href="#">По убыванию</a>
+          </div>
+        </div>
         <article class="item-cart">
           <h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
           <div class="item-cart-links hidden">
