@@ -84,10 +84,15 @@
         <form class="filter">
           <fieldset name="price">
             <legend class="filter-section-header">Цена</legend>
-            <input type="range" min="0" max="30000" step="100" value="25000" name="price-input" id="price-input">
-            <span class="range-price left">0</span>
+            <button type="button" name="price-min-button">
+              <span class="visually-hidden">0</span>
+            </button>
+            <button type="button" name="price-max-button">
+              <span class="visually-hidden">25000</span>
+            </button>
+            <input type="text" value="0" name="price-min">
             <span>-</span>
-            <span class="range-price right">30000</span>
+            <input type="text" value="30000" name="price-max">
           </fieldset>
           <fieldset name="manufacturers">
             <legend class="filter-section-header">Производители</legend>
