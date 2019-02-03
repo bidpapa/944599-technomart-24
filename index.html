@@ -71,12 +71,32 @@
           <h3>Дрели</h3>
           <p>Соседям на радость!</p>
           <img src="img/slide2.jpg" alt="Дрели" width="620" height="270">
+          <button type="button" class="slider-back-button">
+            <span class="visually-hidden">
+            Назад
+            </span>
+          </button>
+          <button type="button" class="slider-forward-button">
+            <span class="visually-hidden">
+            Вперед
+            </span>
+          </button>
           <a href="catalog.html">Открыть каталог</a>
         </div>
         <div class="offers-slider inactive">
           <h3>Перфораторы</h3>
           <p>Настоящие мужские игрушки</p>
           <img src="img/slide1.jpg" alt="Дрели" width="620" height="270">
+          <button type="button" class="slider-back-button">
+            <span class="visually-hidden">
+            Назад
+            </span>
+          </button>
+          <button type="button" class="slider-forward-button">
+            <span class="visually-hidden">
+            Вперед
+            </span>
+          </button>
           <a href="catalog.html">Открыть каталог</a>
         </div>
         <div class="offers-list">
@@ -110,7 +130,7 @@
         <article class="item-cart">
           <h3><a href="#">Перфоратор BOSCH BFG 9000</a></h3>
           <div class="item-cart-links active">
-            <a href="#">Купить</a>
+            <button type="button" class="modal-basket-popup">Купить</button>
             <a href="#">В закладки</a>
           </div>
           <div class="item-cart-img">
@@ -122,7 +142,7 @@
         <article class="item-cart">
           <h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
           <div class="item-cart-links hidden">
-            <a href="#">Купить</a>
+            <button type="button" class="modal-basket-popup">Купить</button>
             <a href="#">В закладки</a>
           </div>
           <div class="item-cart-img">
@@ -134,7 +154,7 @@
         <article class="item-cart">
           <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
           <div class="item-cart-links hidden">
-            <a href="#">Купить</a>
+            <button type="button" class="modal-basket-popup">Купить</button>
             <a href="#">В закладки</a>
           </div>
           <div class="item-cart-img">
@@ -146,7 +166,7 @@
         <article class="item-cart new">
           <h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
           <div class="item-cart-links hidden">
-            <a href="#">Купить</a>
+            <button type="button" class="modal-basket-popup">Купить</button>
             <a href="#">В закладки</a>
           </div>
           <div class="item-cart-img">
@@ -210,9 +230,15 @@
         </header>
         <div class="services-slider-rotator">
           <ul>
-            <li>Доставка</li>
-            <li>Гарантия</li>
-            <li>Кредит</li>
+            <li>
+              <span class="services-slider active">Доставка</span>
+            </li>
+            <li>
+              <span class="services-slider">Гарантия</span>
+            </li>
+            <li>
+              <span class="services-slider">Кредит</span>
+            </li>
           </ul>
         </div>
         <div class="services-slider">
@@ -250,8 +276,12 @@
         <div class="company-contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис</p>
-          <div class="company-contacts-map"><img src="img/mapmini.jpg"></div>
-          <a href="writeus.html" class="button contacts">Заблудились? Напишите нам</a>
+          <div class="company-contacts-map">
+            <button type="button" class="modal-map-popup">
+              <img src="img/mapmini.jpg" alt="г.Санкт-Петербург, ул. Б. Конюшенная д.19/8" width="315" height="170">
+            </button>
+          </div>
+          <button type="button" class="modal-contact-popup">Заблудились? Напишите нам</button>
         </div>
       </section>
       <section class="modal modal-contact">
@@ -265,7 +295,7 @@
           <textarea form="contact-form" id="contact-form-letteruser" rows="3" cols="10" placeholder="В свободной форме" name="contact-form-letteruser"></textarea>
           <button type="submit" name="submit-contact-form">Отправить</button>
         </form>
-        <button type="button" name="reset-modal-contact">
+        <button type="button" class="reset-modal">
             <span class="visually-hidden">
               Закрыть
             </span>
@@ -273,8 +303,11 @@
       </section>
       <section class="modal modal-map">
         <h2 class="visually-hidden">Наш адрес</h2>
-        <img src="img/mapbig.jpg" alt="г.Санкт-Петербург, ул. Б. Конюшенная д.19/8" width="940" height="450">
-        <button type="button" name="reset-modal-map">
+        <a href="#">
+          <span class="visually-hidden">Сервис карт</span>
+          <img src="img/mapbig.jpg" alt="г.Санкт-Петербург, ул. Б. Конюшенная д.19/8" width="940" height="450">
+        </a>
+        <button type="button" class="reset-modal">
           <span class="visually-hidden">
             Закрыть
           </span>
