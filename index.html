@@ -67,37 +67,31 @@
     <main>
       <section class="offers">
         <h2 class="visually-hidden">Предложения</h2>
-        <div class="offers-slider active">
-          <h3>Дрели</h3>
-          <p>Соседям на радость!</p>
-          <img src="img/slide2.jpg" alt="Дрели" width="620" height="270">
-          <button type="button" class="slider-back-button">
-            <span class="visually-hidden">
-            Назад
-            </span>
-          </button>
-          <button type="button" class="slider-forward-button">
-            <span class="visually-hidden">
-            Вперед
-            </span>
-          </button>
-          <a href="catalog.html">Открыть каталог</a>
-        </div>
-        <div class="offers-slider inactive">
-          <h3>Перфораторы</h3>
-          <p>Настоящие мужские игрушки</p>
-          <img src="img/slide1.jpg" alt="Дрели" width="620" height="270">
-          <button type="button" class="slider-back-button">
-            <span class="visually-hidden">
-            Назад
-            </span>
-          </button>
-          <button type="button" class="slider-forward-button">
-            <span class="visually-hidden">
-            Вперед
-            </span>
-          </button>
-          <a href="catalog.html">Открыть каталог</a>
+        <div class="offers-slider">
+          <div class="offers-slide active">
+            <h3>Дрели</h3>
+            <p>Соседям на радость!</p>
+            <img src="img/slide2.jpg" alt="Дрели" width="620" height="270">
+            <a href="catalog.html">Открыть каталог</a>
+          </div>
+          <div class="offers-slide inactive">
+            <h3>Перфораторы</h3>
+            <p>Настоящие мужские игрушки</p>
+            <img src="img/slide1.jpg" alt="Дрели" width="620" height="270">
+            <a href="catalog.html">Открыть каталог</a>
+          </div>
+          <div class=offers-slider-buttons">
+            <button type="button" class="slider-back-button">
+              <span class="visually-hidden">
+              Назад
+              </span>
+            </button>
+            <button type="button" class="slider-forward-button">
+              <span class="visually-hidden">
+              Вперед
+              </span>
+            </button>
+          </div>
         </div>
         <div class="offers-list">
           <div class="offers-list-item new">
@@ -130,7 +124,7 @@
         <article class="item-cart">
           <h3><a href="#">Перфоратор BOSCH BFG 9000</a></h3>
           <div class="item-cart-links active">
-            <button type="button" class="modal-basket-popup">Купить</button>
+            <a href="#">Купить</a>
             <a href="#">В закладки</a>
           </div>
           <div class="item-cart-img">
@@ -142,7 +136,7 @@
         <article class="item-cart">
           <h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
           <div class="item-cart-links hidden">
-            <button type="button" class="modal-basket-popup">Купить</button>
+            <a href="#">Купить</a>
             <a href="#">В закладки</a>
           </div>
           <div class="item-cart-img">
@@ -154,7 +148,7 @@
         <article class="item-cart">
           <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
           <div class="item-cart-links hidden">
-            <button type="button" class="modal-basket-popup">Купить</button>
+            <a href="#">Купить</a>
             <a href="#">В закладки</a>
           </div>
           <div class="item-cart-img">
@@ -166,7 +160,7 @@
         <article class="item-cart new">
           <h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
           <div class="item-cart-links hidden">
-            <button type="button" class="modal-basket-popup">Купить</button>
+            <a href="#">Купить</a>
             <a href="#">В закладки</a>
           </div>
           <div class="item-cart-img">
@@ -228,35 +222,38 @@
           <h2>Сервисы</h2>
           <p>Хороший магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </header>
-        <div class="services-slider-rotator">
+        <div class="services-slider">
+          <input type="radio" name="switch" id="button1" checked>
+          <input type="radio" name="switch" id="button2">
+          <input type="radio" name="switch" id="button3">
           <ul>
             <li>
-              <span class="services-slider active">Доставка</span>
+              <label for="button1">Доставка</label>
             </li>
             <li>
-              <span class="services-slider">Гарантия</span>
+              <label for="button2">Гарантия</label>
             </li>
             <li>
-              <span class="services-slider">Кредит</span>
+              <label for="button3">Кредит</label>
             </li>
           </ul>
-        </div>
-        <div class="services-slider">
-          <div class="services-slide active">
-            <h4>Доставка</h4>
-            <p>Мы с удовольствием доставим ваш товар прямо
-            <br>к вашему подъезду совершенно бесплатно!Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
-          </div>
-          <div class="services-slide inactive">
-            <h4>Гарантия</h4>
-            <p>Если купленный у нас товар поломается или заискрит,
-            <br>а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br>Дом уж восстановите как-нибудь сами.</p>
-          </div>
-          <div class="services-slide inactive">
-            <h4>Кредит</h4>
-            <p>Залезть в долговую яму стало проще!
-            <br>Кредитные консультанты придут вам на помощь.</p>
-            <a href="#">Отправить заявку</a>
+          <div class="services-slides">
+            <div class="services-slide">
+              <h4>Доставка</h4>
+              <p>Мы с удовольствием доставим ваш товар прямо
+              <br>к вашему подъезду совершенно бесплатно!Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
+            </div>
+            <div class="services-slide">
+              <h4>Гарантия</h4>
+              <p>Если купленный у нас товар поломается или заискрит,
+              <br>а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br>Дом уж восстановите как-нибудь сами.</p>
+            </div>
+            <div class="services-slide">
+              <h4>Кредит</h4>
+              <p>Залезть в долговую яму стало проще!
+              <br>Кредитные консультанты придут вам на помощь.</p>
+              <a href="#">Отправить заявку</a>
+            </div>
           </div>
         </div>
       </section>
@@ -277,11 +274,11 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис</p>
           <div class="company-contacts-map">
-            <button type="button" class="modal-map-popup">
+            <a href="#" class="company-contacts-map-ref">
               <img src="img/mapmini.jpg" alt="г.Санкт-Петербург, ул. Б. Конюшенная д.19/8" width="315" height="170">
-            </button>
+            </a>
           </div>
-          <button type="button" class="modal-contact-popup">Заблудились? Напишите нам</button>
+          <a href="#" class="company-contacts-ref">Заблудились? Напишите нам</a>
         </div>
       </section>
       <section class="modal modal-contact">
@@ -303,10 +300,7 @@
       </section>
       <section class="modal modal-map">
         <h2 class="visually-hidden">Наш адрес</h2>
-        <a href="#">
-          <span class="visually-hidden">Сервис карт</span>
-          <img src="img/mapbig.jpg" alt="г.Санкт-Петербург, ул. Б. Конюшенная д.19/8" width="940" height="450">
-        </a>
+        <img src="img/mapbig.jpg" alt="г.Санкт-Петербург, ул. Б. Конюшенная д.19/8" width="940" height="450">
         <button type="button" class="reset-modal">
           <span class="visually-hidden">
             Закрыть
