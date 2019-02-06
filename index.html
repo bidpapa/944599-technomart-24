@@ -3,12 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <h1 class="visually-hidden main-title">Магазин Техномарт</h1>
     <header class="main-header">
       <section class="main-header-top">
-        <a class="main-logo">Техномарт</a>
+        <a class="main-logo">
+          <img src="img/logomain.svg" alt="Техномарт" width="110" height="20">
+        </a>
         <form name="searchform">
           <label for="search" class="visually-hidden">Поиск</label>
           <input type="search" id="search" placeholder="Поиск">
@@ -26,15 +31,15 @@
       </section>
       <section class="main-header-site-desc">
         <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <address>
-          <p>+7(812)555-05-55</p>
+        <address class="main-address">
+          <p>+7 (812) 555-05-55</p>
           <p>г.Санкт-Петербург, ул. Б. Конюшенная д.19/8</p>
         </address>
       </section>
       <div class="main-header-user">
-        <ul class="auth-menu">
+        <ul>
           <li>
-            <a href="#">
+            <a href="#" class="auth-menu">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
                 <g>
                   <polygon fill="#32425C" points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17   "/>
@@ -45,7 +50,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" class="auth-menu">
               Регистрация
             </a>
           </li>
@@ -122,7 +127,7 @@
           <a href="#">Все популярные товары</a>
         </header>
         <article class="item-cart">
-          <h3><a href="#">Перфоратор BOSCH BFG 9000</a></h3>
+          <h3><a href="#" class="item-name">Перфоратор BOSCH BFG 9000</a></h3>
           <div class="item-cart-links active">
             <a href="#">Купить</a>
             <a href="#">В закладки</a>
@@ -134,7 +139,7 @@
           <span class="item-price-sale">25 500 р.</span>
         </article>
         <article class="item-cart">
-          <h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
+          <h3><a href="#" class="item-name">Перфоратор BOSCH BFG 3000</a></h3>
           <div class="item-cart-links hidden">
             <a href="#">Купить</a>
             <a href="#">В закладки</a>
@@ -146,7 +151,7 @@
           <span class="item-price-sale">15 500 р.</span>
         </article>
         <article class="item-cart">
-          <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+          <h3><a href="#" class="item-name">Перфоратор BOSCH BFG 6000</a></h3>
           <div class="item-cart-links hidden">
             <a href="#">Купить</a>
             <a href="#">В закладки</a>
@@ -158,7 +163,7 @@
           <span class="item-price-sale">25 500 р.</span>
         </article>
         <article class="item-cart new">
-          <h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
+          <h3><a href="#" class="item-name">Перфоратор BOSCH BFG 2000</a></h3>
           <div class="item-cart-links hidden">
             <a href="#">Купить</a>
             <a href="#">В закладки</a>
@@ -259,7 +264,7 @@
       </section>
       <section class="company">
         <div class="company-aboutus">
-          <h2>Компания "Техномарт"</h2>
+          <h2>Компания «Техномарт»</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России!
           <br>Техномарт работает со многими транспортными компаниями: </p>
@@ -268,7 +273,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспецидия</li>
           </ul>
-          <a href="#" class="button aboutus">Подробнее о компании</a>
+          <a href="#" class="company-aboutus-ref">Подробнее о компании</a>
         </div>
         <div class="company-contacts">
           <h2>Контакты</h2>
@@ -311,10 +316,12 @@
 
     <footer class="main-footer">
       <section class="main-footer-top">
-        <a class="main-logo">Техномарт</a>
-        <address>
+        <a class="main-logo-footer">
+          <img src="img/logomain.svg" alt="Техномарт" width="110" height="20">
+        </a>
+        <address class="footer-address">
           <p>г.Санкт-Петербург, ул. Б. Конюшенная д.19/8</p>
-          <p>+7(812)555-05-55</p>
+          <p>+7 (812) 555-05-55</p>
         </address>
         <ul class="main-footer-navigation-summary">
           <li><a href="#">Компания</a></li>
