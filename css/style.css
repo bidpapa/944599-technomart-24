@@ -237,7 +237,7 @@ button[name="submit-searchform"].searchbutton {
   color: #ee3643;
   text-decoration: none;
 }
-/* начало разметки уникальных разделов catalog.html */
+/* начало стилизации уникальных разделов catalog.html */
 .catalog-main {
   background-color: #ffffff;
 }
@@ -250,9 +250,7 @@ button[name="submit-searchform"].searchbutton {
   text-transform: uppercase;
 }
 .breadcrumbs a {
-  font-size: 13px;
   line-height: 18px;
-  color: #000000;
   text-transform: uppercase;
 }
 .item-cart-links a {
@@ -292,7 +290,6 @@ button[name="submit-searchform"].searchbutton {
 .item-name {
   font-size: 18px;
   line-height: 20px;
-  color: #000000;
   font-weight: bold;
 }
 .item-price {
@@ -312,14 +309,12 @@ button[name="submit-searchform"].searchbutton {
 .filter-section-header {
   font-size: 17px;
   line-height: 18px;
-  color: #000000;
   font-weight: bold;
   text-transform: uppercase;
 }
 .filter label {
   font-size: 15px;
   line-height: 20px;
-  color: #000000;
   text-transform: uppercase;
 }
 .filter input[type="submit"] {
@@ -327,6 +322,5 @@ button[name="submit-searchform"].searchbutton {
   border: 1px solid #c5c5c5;
   font-size: 13px;
   line-height: 18px;
-  color: #000000;
   text-transform: uppercase;
 }
