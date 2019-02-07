@@ -250,6 +250,7 @@ button[name="submit-searchform"].searchbutton {
   text-transform: uppercase;
 }
 .breadcrumbs a {
+  color: #000000;
   line-height: 18px;
   text-transform: uppercase;
 }
@@ -288,6 +289,7 @@ button[name="submit-searchform"].searchbutton {
   opacity: 0.3;
 }
 .item-name {
+  color: #000000;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
