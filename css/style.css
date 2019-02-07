@@ -1,13 +1,32 @@
 body {
-  margin: 0 auto;
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
   background-color: #f1f5f7;
 }
 a {
-  text-decoration: none
+  text-decoration: none;
 }
-.visually-hidden, .modal {
+.modal {
   display: none;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.main-header {
+  font-family: 'Cuprum', Arial, sans-serif;
 }
 .main-header-top {
   background-color: #32425c;
@@ -27,63 +46,66 @@ a {
   background-color: #ba2732;
   border-bottom: 5px solid #8e1e26;
 }
-input[type="search"] {
+input[type="search"].searchinput {
 
   background-color: #32425c;
   border: none;
 }
-input[type="search"]::placeholder {
-  color: white;
+input[type="search"].searchinput::placeholder {
+  color: #ffffff;
 }
-input[type="search"]:hover {
+input[type="search"].searchinput:hover {
   background-color: #212a3a;
 }
-input[type="search"]:focus {
+input[type="search"].searchinput:focus {
   background-color: #ffffff;
 }
-button[name="submit-searchform"] {
+button[name="submit-searchform"].searchbutton {
   background-color: inherit;
   border: none;
   cursor: pointer;
 }
-.main-header-links a {
-  color: white;
+.header-link {
+  color: #ffffff;
 }
-.main-header-links a:first-child:hover,
-.main-header-links a:nth-child(2):hover {
+.header-link-bookmark:hover,
+.header-link-basket:hover {
   background-color: #212a3a;
 }
-.main-header-links a:first-child:active,
-.main-header-links a:nth-child(2):active {
+.header-link-bookmark:active,
+.header-link-basket:active {
   color: #8b8e94;
   background-color: #161d29;
 }
-.main-header-links a:last-child {
+.header-link-submit {
   background-color: #63a63e;
 }
-.main-header-links a:last-child:hover {
+.header-link-submit:hover {
   background-color: #5fbb2d;
 }
-.main-header-links a:last-child:active {
+.header-link-submit:active {
   color: #8b8e94;
   background-color: #518534;
 }
-.basket-active {
+.header-link-red {
   background-color: #ee3643;
 }
-.main-header-site-desc > p {
+.short-site-desc {
+
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
 }
-.main-address p:first-child {
+.header-address-phone {
+
   font-style: normal;
   font-size: 21px;
   line-height: 21px;
   color: #e9292a;
 }
-.main-address p:last-child {
+.header-address-street {
+
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
@@ -94,7 +116,8 @@ button[name="submit-searchform"] {
 }
 .auth-menu,
 .auth-menu a {
-  background-color: white;
+  background-color: #ffffff;
+
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -107,6 +130,7 @@ button[name="submit-searchform"] {
   color: #c5c5c5;
 }
 .order-menu a {
+
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
@@ -120,14 +144,16 @@ button[name="submit-searchform"] {
 }
 .main-header-navigation {
   background-color: #32425c;
-  color: white;
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
   border-bottom: 5px solid #293449;
 }
 .main-header-navigation ul {
   list-style: none;
 }
 .main-header-navigation a {
-  color: white;
+  color: #ffffff;
 }
 .main-header-navigation a:hover {
   background-color: #293449;
@@ -138,35 +164,32 @@ button[name="submit-searchform"] {
 }
 /* разметка необязательных блоков */
 .company {
-  background-color: white;
+  background-color: #ffffff;
   color: #000000;
 }
 .company-aboutus h2,
 .company-contacts h2 {
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-}
-.company-aboutus p,
-.company-contacts p {
-  font-family: 'PT Sans', Arial, sans-serif;
-  font-size: 13px;
-  line-height: 24px;
 }
 .company-list-partners {
   list-style: none;
 }
 .company-list-partners li {
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
 }
 .company-contacts-ref,
 .company-aboutus-ref {
   background-color: #ee3643;
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
 }
 .main-footer ul {
   list-style: none;
@@ -175,6 +198,7 @@ button[name="submit-searchform"] {
   text-decoration: underline;
 }
 .main-footer {
+  font-family: 'Cuprum', Arial, sans-serif;
   background-color: #32425c;
 }
 .main-footer-top {
@@ -204,7 +228,7 @@ button[name="submit-searchform"] {
   background-color: #293449;
   font-size: 16px;
   line-height: 18px;
-  color: white;
+  color: #ffffff;
 }
 .main-footer-bottom a {
   color: #ffd180;
@@ -215,49 +239,50 @@ button[name="submit-searchform"] {
 }
 /* начало разметки уникальных разделов catalog.html */
 .catalog-main {
-  background-color: white;
+  background-color: #ffffff;
 }
 .catalog-main h1 {
   background-color: #f1f5f7;
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
 }
 .breadcrumbs a {
-  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
 }
 .item-cart-links a {
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 }
 .item-cart-links a:first-child {
   background-color: #63a63e;
-  color: white;
+  color: #ffffff;
   border-bottom: 3px solid #367315;
 }
 .item-cart-links a:last-child {
-  background-color: #white;
+  background-color: #ffffff;
   color: #32425c;
   border: 3px solid #63a63e;
 }
 .item-cart-links a:first-child:hover {
   background-color: #5fbb2d;
-  color: white;
+  color: #ffffff;
   border-bottom: 3px solid #367315;
 }
 .item-cart-links a:first-child:active {
   background-color: #518534;
-  color: white;
+  color: #ffffff;
   border-bottom: 3px solid #367315;
 }
 .item-cart-links a:last-child:hover {
-  background-color: #white;
+  background-color: #ffffff;
   color: #32425c;
   border: 3px solid #32425c;
 }
@@ -265,14 +290,12 @@ button[name="submit-searchform"] {
   opacity: 0.3;
 }
 .item-name {
-  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
   font-weight: bold;
 }
 .item-price {
-  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #999999;
@@ -280,7 +303,6 @@ button[name="submit-searchform"] {
   text-decoration: line-through;
 }
 .item-price-sale {
-  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   background-color: #ee3643;
@@ -288,7 +310,6 @@ button[name="submit-searchform"] {
   font-weight: bold;
 }
 .filter-section-header {
-  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #000000;
@@ -296,16 +317,14 @@ button[name="submit-searchform"] {
   text-transform: uppercase;
 }
 .filter label {
-  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
 }
 .filter input[type="submit"] {
-  background-color: white;
+  background-color: #ffffff;
   border: 1px solid #c5c5c5;
-  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
