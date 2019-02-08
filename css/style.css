@@ -79,6 +79,9 @@ input[type="radio"].visually-hidden {
 .search-input:focus + .search-button svg {
   fill: #ee3643;
 }
+.search-input:focus + .search-button {
+  background-color: #ffffff;
+}
 .header-link {
   color: #ffffff;
 }
