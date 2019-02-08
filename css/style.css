@@ -1,9 +1,9 @@
 body {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
-  background-color: #f1f5f7;
+  background-color: #ffffff;
 }
 a {
   text-decoration: none;
@@ -26,10 +26,11 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 .main-header {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
+  background-color: #f3f7f8;
 }
 .main-header-top {
-  background-color: #32425c;
+  background-color: #293449;
   font-size: 17px;
   line-height: 18px;
   color: #000000;
@@ -46,24 +47,33 @@ input[type="radio"].visually-hidden {
   background-color: #ba2732;
   border-bottom: 5px solid #8e1e26;
 }
-input[type="search"].searchinput {
+.search-input {
 
-  background-color: #32425c;
+  background-color: #293449;
   border: none;
 }
-input[type="search"].searchinput::placeholder {
+.search-input::placeholder {
   color: #ffffff;
 }
-input[type="search"].searchinput:hover {
+.search-input:hover {
   background-color: #212a3a;
 }
-input[type="search"].searchinput:focus {
+.search-input:focus {
   background-color: #ffffff;
 }
-button[name="submit-searchform"].searchbutton {
+.search-button {
   background-color: inherit;
   border: none;
   cursor: pointer;
+}
+.search-button svg {
+  fill: #666e7d;
+}
+.search-button:hover svg {
+  fill: #ffffff;
+}
+.search-input:focus + .search-button svg {
+  fill: #ee3643;
 }
 .header-link {
   color: #ffffff;
@@ -74,7 +84,7 @@ button[name="submit-searchform"].searchbutton {
 }
 .header-link-bookmark:active,
 .header-link-basket:active {
-  color: #8b8e94;
+  color: rgba(255, 255, 255, 0.6);
   background-color: #161d29;
 }
 .header-link-submit {
@@ -84,28 +94,25 @@ button[name="submit-searchform"].searchbutton {
   background-color: #5fbb2d;
 }
 .header-link-submit:active {
-  color: #8b8e94;
+  color: rgba(255, 255, 255, 0.6);
   background-color: #518534;
 }
 .header-link-red {
   background-color: #ee3643;
 }
 .short-site-desc {
-
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
 }
 .header-address-phone {
-
   font-style: normal;
   font-size: 21px;
   line-height: 21px;
   color: #e9292a;
 }
 .header-address-street {
-
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
@@ -117,7 +124,6 @@ button[name="submit-searchform"].searchbutton {
 .auth-menu,
 .auth-menu a {
   background-color: #ffffff;
-
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -130,7 +136,6 @@ button[name="submit-searchform"].searchbutton {
   color: #c5c5c5;
 }
 .order-menu a {
-
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
@@ -169,7 +174,7 @@ button[name="submit-searchform"].searchbutton {
 }
 .company-aboutus h2,
 .company-contacts h2 {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -178,14 +183,14 @@ button[name="submit-searchform"].searchbutton {
   list-style: none;
 }
 .company-list-partners li {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
 }
 .company-contacts-ref,
 .company-aboutus-ref {
   background-color: #ee3643;
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -198,7 +203,7 @@ button[name="submit-searchform"].searchbutton {
   text-decoration: underline;
 }
 .main-footer {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   background-color: #32425c;
 }
 .main-footer-top {
@@ -243,7 +248,7 @@ button[name="submit-searchform"].searchbutton {
 }
 .catalog-main h1 {
   background-color: #f1f5f7;
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -255,7 +260,7 @@ button[name="submit-searchform"].searchbutton {
   text-transform: uppercase;
 }
 .item-cart-links a {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
