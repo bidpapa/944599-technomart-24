@@ -132,8 +132,29 @@ input[type="radio"].visually-hidden {
   color: #ee3643;
 }
 .auth-menu:active,
-.auth-menu a:active {
+.auth-menu a:active
+{
   color: #c5c5c5;
+}
+.login svg {
+  fill: #c5c5c5;
+}
+.login:hover svg {
+  fill: #32425c;
+}
+.login:active svg {
+  fill: #c5c5c5;
+}
+.auth-menu-user-name svg,
+.auth-menu-user-logout svg {
+  fill: #c5c5c5;
+}
+.auth-menu-user-name:hover svg,
+.auth-menu-user-logout:hover svg {
+  fill: #32425c
+}
+.auth-menu a:active svg {
+  fill: #c5c5c5;
 }
 .order-menu a {
   font-size: 16px;
