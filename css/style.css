@@ -48,7 +48,7 @@ input[type="radio"].visually-hidden {
   border-bottom: 5px solid #8e1e26;
 }
 .search-input {
-
+  color: #ffffff;
   background-color: #293449;
   border: none;
 }
@@ -58,8 +58,12 @@ input[type="radio"].visually-hidden {
 .search-input:hover {
   background-color: #212a3a;
 }
+.search-input:hover + .search-button svg {
+  fill: #ffffff;
+}
 .search-input:focus {
   background-color: #ffffff;
+  color: #000000;
 }
 .search-button {
   background-color: inherit;
@@ -286,32 +290,32 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   text-transform: uppercase;
 }
-.item-cart-links a:first-child {
+.buy {
   background-color: #63a63e;
   color: #ffffff;
   border-bottom: 3px solid #367315;
 }
-.item-cart-links a:last-child {
+.to-bookmarks {
   background-color: #ffffff;
   color: #32425c;
   border: 3px solid #63a63e;
 }
-.item-cart-links a:first-child:hover {
+.buy:hover {
   background-color: #5fbb2d;
   color: #ffffff;
   border-bottom: 3px solid #367315;
 }
-.item-cart-links a:first-child:active {
+.buy:active {
   background-color: #518534;
   color: #ffffff;
   border-bottom: 3px solid #367315;
 }
-.item-cart-links a:last-child:hover {
+.to-bookmarks:hover {
   background-color: #ffffff;
   color: #32425c;
   border: 3px solid #32425c;
 }
-.item-cart-links a:last-child:active {
+.to-bookmarks:active {
   opacity: 0.3;
 }
 .item-name {
