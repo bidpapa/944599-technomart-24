@@ -59,12 +59,12 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   color: #000000;
   box-sizing: border-box;
-  box-shadow: inset 0 -10px 0 -5px rgb(243, 247, 248);
+
 }
 
 .main-logo {
   background-color: #ee3643;
-  border-bottom: 5px solid #b52933;
+  box-shadow: 0 5px 0 0px #b52933;
   width: 220px;
   height: 30px;
   text-align: center;
@@ -76,13 +76,13 @@ input[type="radio"].visually-hidden {
 .main-logo-footer:hover,
 .main-logo-footer:focus {
   background-color: #ca2c37;
-  border-bottom: 5px solid #9a212a;
+  box-shadow: 0 5px 0 0px #9a212a;
 }
 
 .main-logo:active,
 .main-logo-footer:active {
   background-color: #ba2732;
-  border-bottom: 5px solid #8e1e26;
+  box-shadow: 0 5px 0 0px #8e1e26;
 }
 
 .searchform {
@@ -200,7 +200,7 @@ input[type="radio"].visually-hidden {
   line-height: 23px;
   color: #ee3643;
   width: 200px;
-  padding: 44px 50px 40px 52px;
+  padding: 49px 50px 40px 52px;
   margin: 0;
 }
 
@@ -212,7 +212,7 @@ input[type="radio"].visually-hidden {
   border: 3px solid white;
   padding: 10px 45px 8px 72px;
   width: 148px;
-  margin: 41px 0 0 17px;
+  margin: 46px 0 0 17px;
 }
 
 .header-address-street {
@@ -231,7 +231,7 @@ input[type="radio"].visually-hidden {
 
 .user-menu-main {
   width: 300px;
-  margin: 41px 0 0 20px;
+  margin: 46px 0 0 20px;
   padding: 0;
 }
 
@@ -241,7 +241,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   margin-left: 20px;
-  margin-top: 41px;
+  margin-top: 46px;
 }
 
 .order-menu {
@@ -393,30 +393,17 @@ input[type="radio"].visually-hidden {
 
 .main-header-navigation ul {
   list-style: none;
-  margin: 0;
+  margin: 0 19px 0 19px;
   padding: 0;
 }
 
 .main-header-navigation a {
   color: #ffffff;
   display: block;
-  padding-right: 32px;
-  padding-left: 32px;
+  padding-right: 31px;
+  padding-left: 31px;
   padding-top: 20px;
   padding-bottom: 18px;
-}
-
-.main-header-navigation li:first-child a {
-  padding-left: 51px;
-}
-
-.main-header-navigation li:nth-child(4) a {
-  padding-right: 25px;
-  padding-left: 25px;
-}
-
-.main-header-navigation li:last-child a {
-  padding-right: 52px;
 }
 
 .main-header-navigation a:hover,
@@ -882,8 +869,9 @@ input[type="radio"].visually-hidden {
 
 .item-cart {
   border: 1px solid #e5e5e5;
+  box-sizing: border-box;
   margin-bottom: 25px; /* временное значение для проверки теней и рамок*/
-  width: 219px;
+  width: 220px;
 }
 
 .item-cart:hover {
