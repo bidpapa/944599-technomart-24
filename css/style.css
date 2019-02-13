@@ -64,7 +64,7 @@ input[type="radio"].visually-hidden {
 
 .main-logo {
   background-color: #ee3643;
-  box-shadow: 0 5px 0 0px #b52933;
+  box-shadow: 0 5px 0 0 #b52933;
   width: 220px;
   height: 30px;
   text-align: center;
@@ -76,13 +76,13 @@ input[type="radio"].visually-hidden {
 .main-logo-footer:hover,
 .main-logo-footer:focus {
   background-color: #ca2c37;
-  box-shadow: 0 5px 0 0px #9a212a;
+  box-shadow: 0 5px 0 0 #9a212a;
 }
 
 .main-logo:active,
 .main-logo-footer:active {
   background-color: #ba2732;
-  box-shadow: 0 5px 0 0px #8e1e26;
+  box-shadow: 0 5px 0 0 #8e1e26;
 }
 
 .searchform {
@@ -97,8 +97,7 @@ input[type="radio"].visually-hidden {
   border: none;
   order: 1;
   flex-grow: 1;
-  padding-left: 2px;
-  padding-bottom: 2px;
+  padding: 0 5px 2px 2px;
 }
 
 .search-input::placeholder {
@@ -154,7 +153,7 @@ input[type="radio"].visually-hidden {
   height: 42px;
   display: block;
   box-sizing: border-box;
-  padding: 12px 0 10px 45px;
+  padding: 12px 5px 10px 45px;
 }
 
 .header-link-basket {
@@ -223,6 +222,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-top: 3px;
   padding-left: 27px;
+  padding-right: 5px;
 }
 
 .main-header-user {
@@ -317,6 +317,7 @@ input[type="radio"].visually-hidden {
 .registration {
   width: 150px;
   padding-left: 25px;
+  padding-right: 5px;
   margin-left: 5px;
 }
 
@@ -768,6 +769,7 @@ input[type="radio"].visually-hidden {
 .footer-address p {
   margin: 0;
   padding-left: 2px;
+  padding-right: 5px;
 }
 
 .main-footer-navigation-summary a {
@@ -849,7 +851,7 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   text-transform: uppercase;
   margin: 0 0 21px 0;
-  padding: 30px 0 29px 28px;
+  padding: 30px 28px 29px 28px;
 }
 
 .breadcrumbs {
@@ -964,11 +966,6 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
-}
-
-.filter h2 {
-  margin: 0;
-  padding: 0;
 }
 
 .filter fieldset {
@@ -1115,6 +1112,11 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 }
 
+.filter h2 {
+  margin: 0;
+  padding: 0;
+}
+
 .filter h2,
 .sort-label,
 .sort-links a,
@@ -1128,7 +1130,7 @@ input[type="radio"].visually-hidden {
 .sort,
 .filter h2 {
   background-color: #f7f3ec;
-  padding: 10px 0 10px 19px;
+  padding: 10px 10px 10px 19px;
   margin-bottom: 16px;
 }
 
@@ -1137,7 +1139,8 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-label {
-  width: 220px;
+  width: 210px;
+  padding-right: 10px;
 }
 
 .sort-links {
