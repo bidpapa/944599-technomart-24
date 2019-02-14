@@ -58,8 +58,6 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 18px;
   color: #000000;
-  box-sizing: border-box;
-
 }
 
 .main-logo {
@@ -87,7 +85,6 @@ input[type="radio"].visually-hidden {
 
 .searchform {
   width: 270px;
-  display: flex;
   height: 42px;
 }
 
@@ -123,8 +120,8 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
   position: relative;
   width: 46px;
-  padding-right: 10px;
-  padding-left: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .search-button svg {
@@ -238,17 +235,13 @@ input[type="radio"].visually-hidden {
 .user-menu {
   list-style: none;
   width: 300px;
-  margin: 0;
+  margin: 46px 0 0 20px;
   padding: 0;
-  margin-left: 20px;
-  margin-top: 46px;
 }
 
 .order-menu {
-  margin: 0;
+  margin: 5px 0 0 38px;
   padding: 0;
-  margin-left: 38px;
-  margin-top: 5px;
 }
 
 .order-menu li:last-child {
@@ -257,15 +250,10 @@ input[type="radio"].visually-hidden {
 
 .main-header-user li {
   display: inline-block;
-
 }
 
 .user-enter {
   margin-left: 20px;
-}
-
-.main-header-user li:first-child {
-  display: inline-block;
 }
 
 .login span {
@@ -280,38 +268,33 @@ input[type="radio"].visually-hidden {
   color: #000000;
   display: block;
   width: 121px;
-  padding-left: 13px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px 0 12px 13px;
   box-sizing: border-box;
 }
 
 .auth-menu-user-name {
   width: 240px;
-  padding-left: 14px;
-  padding-top: 11px;
-  padding-bottom: 12px;
+  padding: 11px 3px 12px 14px;
 }
 
 .auth-menu-user-name span {
   padding-left: 8px;
+  padding-right: 3px;
   overflow: hidden;
 }
 
 .auth-menu-user-logout {
   width: 60px;
-  padding-top: 13px;
-  padding-left: 29px;
-  padding-bottom: 11px;
+  padding: 13px 3px 11px 29px;
 }
 
 .user-menu a {
-    background-color: #ffffff;
-    font-size: 21px;
-    line-height: 21px;
-    color: #000000;
-    display: block;
-    box-sizing: border-box;
+  background-color: #ffffff;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  display: block;
+  box-sizing: border-box;
 }
 
 .registration {
@@ -401,10 +384,7 @@ input[type="radio"].visually-hidden {
 .main-header-navigation a {
   color: #ffffff;
   display: block;
-  padding-right: 31px;
-  padding-left: 31px;
-  padding-top: 20px;
-  padding-bottom: 18px;
+  padding: 20px 31px 18px 31px;
 }
 
 .main-header-navigation a:hover,
@@ -610,8 +590,7 @@ input[type="radio"].visually-hidden {
 }
 
 .company-aboutus p {
-  margin: 0;
-  margin-top: 25px;
+  margin: 25px 0 0 0;
 }
 
 .company-contacts {
@@ -622,8 +601,7 @@ input[type="radio"].visually-hidden {
 
 .company-contacts p {
   width: 200px;
-  margin: 0;
-  margin-top: 25px;
+  margin: 25px 0 0 0;
 }
 
 .company-contacts-map {
@@ -683,10 +661,7 @@ input[type="radio"].visually-hidden {
 
 .company-contacts-ref {
   margin-top: 41px;
-  padding-left: 64px;
-  padding-right: 50px;
-  padding-bottom: 9px;
-  padding-top: 11px;
+  padding: 11px 50px 9px 64px;
 }
 
 .company-contacts-map-ref {
@@ -696,10 +671,7 @@ input[type="radio"].visually-hidden {
 
 .company-aboutus-ref {
   margin-top: 36px;
-  padding-left: 41px;
-  padding-right: 39px;
-  padding-bottom: 9px;
-  padding-top: 11px;
+  padding: 11px 39px 9px 41px;
 }
 
 .company-aboutus-ref {
@@ -730,18 +702,14 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer-navigation-summary {
-  margin: 0;
+  margin: 37px 0 0 12px;
   padding: 0;
-  margin-top: 37px;
-  margin-left: 12px;
   justify-content: space-between;
 }
 
 .main-footer-navigation-offers {
-  margin: 0;
+  margin: 34px 0 0 35px;
   padding: 0;
-  margin-top: 34px;
-  margin-left: 35px;
   justify-content: space-between;
 }
 
@@ -757,8 +725,8 @@ input[type="radio"].visually-hidden {
   display: block;
   box-sizing: border-box;
   width: 220px;
-  padding: 20px 41px 14px 42px;
   margin-bottom: 27px;
+  padding: 20px 41px 14px 42px;
 }
 
 .footer-address {
@@ -805,9 +773,8 @@ input[type="radio"].visually-hidden {
 
 .footer-bottom-desc {
   box-sizing: border-box;
-  margin: 0;
   width: 380px;
-  margin-top: 37px;
+  margin: 37px 0 0 0;
   padding-right: 150px;
 }
 
@@ -970,9 +937,8 @@ input[type="radio"].visually-hidden {
 
 .filter fieldset {
   border: none;
-  margin: 0;
+  margin: 0 0 22px 0;
   padding: 0;
-  margin-bottom: 22px;
 }
 
 .filter fieldset:nth-child(1),
@@ -999,8 +965,8 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 10px 40px 8px 37px;
   margin-top: 35px;
+  padding: 10px 40px 8px 37px;
 }
 
 .filter-price,
@@ -1027,7 +993,6 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 28px;
   width: 86px;
-
   padding: 5px 5px 5px 5px;
   text-align: center;
 }
@@ -1064,13 +1029,11 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-item {
-  margin: 0;
-  margin-bottom: 16px;
+  margin: 0 0 16px 0;
 }
 
 .filter-item:last-child {
-  margin: 0;
-  margin-bottom: 18px;
+  margin: 0 0 18px 0;
 }
 
 .filter-item:hover svg,
@@ -1130,8 +1093,8 @@ input[type="radio"].visually-hidden {
 .sort,
 .filter h2 {
   background-color: #f7f3ec;
-  padding: 10px 10px 10px 19px;
   margin-bottom: 16px;
+  padding: 10px 10px 10px 19px;
 }
 
 .sort {
