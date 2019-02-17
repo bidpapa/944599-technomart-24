@@ -149,8 +149,8 @@
               <div class="item-cart-img">
                 <img src="img/bfg9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
               </div>
-              <del class="item-price-old">32 500 р.</del>
-              <span class="item-price-sale">25 500 р.</span>
+              <del class="item-price-old">32500 Р.</del>
+              <span class="item-price-sale">25500 Р.</span>
             </article>
             <article class="item-cart">
               <h3><a href="#" class="item-name">Перфоратор BOSCH BFG 3000</a></h3>
@@ -161,8 +161,8 @@
               <div class="item-cart-img">
                 <img src="img/bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
               </div>
-              <del class="item-price-old">22 500 р.</del>
-              <span class="item-price-sale">15 500 р.</span>
+              <del class="item-price-old">22500 Р.</del>
+              <span class="item-price-sale">15500 Р.</span>
             </article>
             <article class="item-cart">
               <h3><a href="#" class="item-name">Перфоратор BOSCH BFG 6000</a></h3>
@@ -173,8 +173,8 @@
               <div class="item-cart-img">
                 <img src="img/bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
               </div>
-              <del class="item-price-old">30 500 р.</del>
-              <span class="item-price-sale">25 500 р.</span>
+              <del class="item-price-old">30500 Р.</del>
+              <span class="item-price-sale">25500 Р.</span>
             </article>
             <article class="item-cart new">
               <h3><a href="#" class="item-name">Перфоратор BOSCH BFG 2000</a></h3>
@@ -185,7 +185,7 @@
               <div class="item-cart-img">
                 <img src="img/bfg2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
               </div>
-              <span class="item-price-sale">12 500 р.</span>
+              <span class="item-price-sale">12500 Р.</span>
             </article>
           </div>
         </section>
@@ -280,56 +280,70 @@
           </div>
         </div>
       </section>
-      <section class="company flex container">
-        <div class="company-aboutus">
-          <h2>Компания «Техномарт»</h2>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России!
-          <br>Техномарт работает со многими транспортными компаниями: </p>
-          <ul class="company-list-partners">
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспецидия</li>
-          </ul>
-          <a href="#" class="company-aboutus-ref">Подробнее о компании</a>
-        </div>
-        <div class="company-contacts">
-          <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис</p>
-          <div class="company-contacts-map">
-            <a href="#" class="company-contacts-map-ref">
-              <img src="img/mapmini.jpg" alt="г.Санкт-Петербург, ул. Б. Конюшенная д.19/8" width="315" height="157">
+      <div class="container">
+        <section class="company flex">
+          <div class="company-aboutus">
+            <h2>Компания «Техномарт»</h2>
+            <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+            <br>Техномарт работает со многими транспортными компаниями: </p>
+            <ul class="company-list-partners">
+              <li>Деловые линии</li>
+              <li>Автотрейдинг</li>
+              <li>ЖелДорЭкспедиция</li>
+            </ul>
+            <a href="#" class="company-aboutus-ref">Подробнее о компании</a>
+          </div>
+          <div class="company-contacts">
+            <h2>Контакты</h2>
+            <p>Вы можете забрать товар сами, заехав в наш офис</p>
+            <div class="company-contacts-map">
+              <a onclick="document.querySelector('.modal-map').style.display='block';" href="#" class="company-contacts-map-ref">
+                <img src="img/mapmini.jpg" alt="г.Санкт-Петербург, ул. Б. Конюшенная д.19/8" width="315" height="157">
+              </a>
+            </div>
+            <a onclick="document.querySelector('.modal-contact').style.display='block';" href="#" class="company-contacts-ref">
+              Заблудились? Напишите нам!
             </a>
           </div>
-          <a href="#" class="company-contacts-ref">Заблудились? Напишите нам!</a>
-        </div>
-      </section>
-      <section class="modal modal-contact">
-        <h2 class="visually-hidden">Отправить письмо</h2>
-        <form name="contact-form">
-          <label for="contact-form-nameuser">Ваше имя: </label>
-          <input type="text" id="contact-form-nameuser" placeholder="Имя Фамилия" name="contact-form-nameuser">
-          <label for="contact-form-emailuser">Ваш e-mail: </label>
-          <input type="email" id="contact-form-emailuser" placeholder="email@example.com" name="contact-form-emailuser">
-          <label for="contact-form-letteruser">Текст письма: </label>
-          <textarea form="contact-form" id="contact-form-letteruser" rows="3" cols="10" placeholder="В свободной форме" name="contact-form-letteruser"></textarea>
-          <button type="submit" name="submit-contact-form">Отправить</button>
-        </form>
-        <button type="button" class="reset-modal">
+        </section>
+
+        <section class="modal modal-contact" id="modal-contact">
+          <h2 class="visually-hidden">Отправить письмо</h2>
+          <form name="contact-form" class="contact-form ">
+            <div class="container-form flex">
+              <div class="modal-contact-area flex">
+                <label for="contact-form-nameuser">Ваше имя: </label>
+                <input type="text" id="contact-form-nameuser" placeholder="Имя Фамилия" name="contact-form-nameuser">
+              </div>
+              <div class="modal-contact-area flex">
+                <label for="contact-form-emailuser">Ваш e-mail: </label>
+                <input type="email" id="contact-form-emailuser" placeholder="email@example.com" name="contact-form-emailuser">
+              </div>
+              <div class="modal-contact-area flex contact-letterarea">
+                <label for="contact-form-letteruser">Текст письма: </label>
+                <textarea form="contact-form" id="contact-form-letteruser" rows="3" cols="10" placeholder="В свободной форме" name="contact-form-letteruser"></textarea>
+              </div>
+            </div>
+            <button type="submit" name="submit-contact-form">Отправить</button>
+          </form>
+          <button onclick="document.querySelector('.modal-contact').style.display='none';" type="button" class="reset-modal">
+              <span class="visually-hidden">
+                Закрыть
+              </span>
+          </button>
+        </section>
+
+        <section class="modal modal-map">
+          <h2 class="visually-hidden">Наш адрес</h2>
+          <img src="img/mapbig.jpg" alt="г.Санкт-Петербург, ул. Б. Конюшенная д.19/8" width="940" height="450">
+           <button type="button" class="reset-modal" onclick="document.querySelector('.modal-map').style.display='none';">
             <span class="visually-hidden">
-              Закрыть
+
             </span>
-        </button>
-      </section>
-      <section class="modal modal-map">
-        <h2 class="visually-hidden">Наш адрес</h2>
-        <img src="img/mapbig.jpg" alt="г.Санкт-Петербург, ул. Б. Конюшенная д.19/8" width="940" height="450">
-        <button type="button" class="reset-modal">
-          <span class="visually-hidden">
-            Закрыть
-          </span>
-        </button>
-      </section>
+          </button>
+        </section>
+      </div>
     </main>
 
     <footer class="main-footer">
@@ -362,19 +376,19 @@
       <section class="main-footer-bottom">
         <div class="container flex">
         <p class="footer-bottom-desc">© 2010-2019 Компания «Техномарт» Все права защищены</p>
-        <ul class="main-footer-sociallinks">
+        <ul class="main-footer-sociallinks flex">
           <li>
-            <a href="#">
+            <a class="vk" href="#">
               <span class="visually-hidden">ВК</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="fb" href="#">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="instagram" href="#">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
@@ -391,5 +405,6 @@
       </section>
     </footer>
 
+  <script> </script>
   </body>
 </html>

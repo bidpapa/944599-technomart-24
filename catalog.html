@@ -84,8 +84,10 @@
 
     <main class="catalog-main">
       <div class="container">
-        <section class="breadcrumbs">
-          <a href="index.html">Главная</a>
+        <section class="breadcrumbs flex">
+          <a href="index.html">
+            <span class="visually-hidden">Главная</span>
+          </a>
           <a href="#">Каталог</a>
           <a href="#">Инструмент</a>
           <a>Перфораторы</a>
@@ -261,7 +263,7 @@
               <article class="item-cart">
                 <h3><a href="#" class="item-name">Перфоратор BOSCH BFG 3000</a></h3>
                 <div class="item-cart-links">
-                  <a href="#" class="buy">Купить</a>
+                  <a onclick="document.querySelector('.modal-basket').style.display='block';" href="#" class="buy">Купить</a>
                   <a href="#" class="to-bookmarks">В закладки</a>
                 </div>
                 <div class="item-cart-img">
@@ -372,6 +374,18 @@
             </div>
           </section>
         </div>
+        <section class="modal modal-basket">
+          <div class="container-form flex">
+            <h2>Товар добавлен в корзину!</h2>
+            <a class="modal-basket-button" href="#">Оформить заказ</a>
+            <button class="modal-basket-button" type="button" name="continue-shopping">Продолжить покупки</button>
+          </div>
+          <button onclick="document.querySelector('.modal-basket').style.display='none';" type="button" name="reset-modal-basket" class="reset-modal">
+            <span class="visually-hidden">
+              Закрыть
+            </span>
+          </button>
+        </section>
       </div>
       <div class="item-about">
         <div class="container">
@@ -381,16 +395,6 @@
           </p>
         </div>
       </div>
-      <section class="modal modal-basket">
-        <h2>Товар добавлен в корзину!</h2>
-        <a href="#">Оформить заказ</a>
-        <button type="button" name="continue-shopping">Продолжить покупки</button>
-        <button type="button" name="reset-modal-basket">
-          <span class="visually-hidden">
-            Закрыть
-          </span>
-        </button>
-      </section>
     </main>
 
     <footer class="main-footer">
@@ -423,19 +427,19 @@
       <section class="main-footer-bottom">
         <div class="container flex">
         <p class="footer-bottom-desc">© 2010-2019 Компания «Техномарт» Все права защищены</p>
-        <ul class="main-footer-sociallinks">
+        <ul class="main-footer-sociallinks flex">
           <li>
-            <a href="#">
+            <a class="vk" href="#">
               <span class="visually-hidden">ВК</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="fb" href="#">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="instagram" href="#">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
