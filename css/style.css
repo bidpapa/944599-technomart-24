@@ -234,6 +234,15 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
 }
 
+.header-link-red:hover,
+.header-link-red:focus {
+  background-color: #ca2c37;
+}
+
+.header-link-red:active {
+  background-color: #ba2732;
+}
+
 .short-site-desc {
   font-style: italic;
   font-size: 16px;
@@ -313,7 +322,7 @@ input[type="radio"].visually-hidden {
   margin-left: 20px;
 }
 
-.login span {
+.user-enter span {
   padding-left: 8px;
   }
 
@@ -376,15 +385,15 @@ input[type="radio"].visually-hidden {
   color: #c5c5c5;
 }
 
-.login svg {
+.user-enter svg {
   fill: #c5c5c5;
 }
 
-.login:hover svg {
+.user-enter:hover svg {
   fill: #32425c;
 }
 
-.login:active svg {
+.user-enter:active svg {
   fill: #c5c5c5;
 }
 
@@ -400,8 +409,13 @@ input[type="radio"].visually-hidden {
   fill: #32425c
 }
 
-.auth-menu a:active svg {
+.auth-menu-user-name:active svg,
+.auth-menu-user-logout:active svg {
   fill: #c5c5c5;
+}
+
+.auth-menu-user-name:active {
+  color: #c5c5c5;
 }
 
 .order-menu li {
@@ -472,9 +486,54 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 37px;
-  top: 50%;
+  padding: 0 20px 0 24px;
+  top: 43%;
   justify-content: space-between;
+}
+
+.slider-back-button {
+  border: none;
+  background: url(../img/icon-left.svg);
+  width: 22px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.slider-forward-button {
+  border: none;
+  background: url(../img/icon-right.svg);
+  width: 22px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.offers-slider-dots {
+  position: absolute;
+  bottom: 31px;
+  width: 100%;
+  justify-content: center;
+}
+
+.slider-dot {
+  border: none;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.active-dot {
+  border: 2px solid #ffffff;
+  background: #ee3643;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  padding: 0;
+  cursor: pointer;
 }
 
 .offers-slide {
@@ -1189,7 +1248,7 @@ input[type="radio"].visually-hidden {
 }
 
 .item-cart:hover {
-  border: none;
+  border: 1px solid #ffffff;
   box-shadow: 0 10px 25px 0px rgba(41, 52, 73, 0.5);
 }
 
@@ -1317,9 +1376,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 125px;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: 42px;
+  margin: 10px auto 21px auto;
   padding: 9px 5px 11px 15px;
   order: 3;
 }
