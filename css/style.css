@@ -126,7 +126,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-button {
-  background-color: inherit;
+  background-color: #293449;
   border: none;
   cursor: pointer;
   position: relative;
@@ -758,7 +758,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-bottom: 99px;
-  float: left;
   z-index: 10;
   min-width: 300px;
 }
@@ -818,14 +817,15 @@ input[type="radio"].visually-hidden {
 }
 
 .services-slides {
-  width: 300%;
+  width: 100%;
   z-index: 0;
   display: flex;
+  position: relative;
 }
 
 .services-slide {
   width: 640px;
-  float: left;
+  position: absolute;
 }
 
 .services-slide h4 {
@@ -834,16 +834,23 @@ input[type="radio"].visually-hidden {
   margin-top: -5px;
 }
 
-#button1:checked ~ .services-slides {
-  transform: translate(0);
+.slide-delivery,
+.slide-garancy,
+.slide-credit {
+  display: none;
+  height: 100%;
 }
 
-#button2:checked ~ .services-slides {
-  transform: translate(-640px);
+#button1:checked ~ .services-slides .slide-delivery {
+  display: block;
 }
 
-#button3:checked ~ .services-slides {
-  transform: translate(-1280px);
+#button2:checked ~ .services-slides .slide-garancy {
+  display: block;
+}
+
+#button3:checked ~ .services-slides .slide-credit {
+  display: block;
 }
 
 .services-slide h4 {
@@ -1247,6 +1254,17 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
+.new::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/flag-new.png);
+  width: 60px;
+  height: 59px;
+  right: -1px;
+  top: -1px;
+  z-index: 100;
+}
+
 .item-cart:hover {
   border: 1px solid #ffffff;
   box-shadow: 0 10px 25px 0px rgba(41, 52, 73, 0.5);
@@ -1362,8 +1380,10 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   text-decoration: line-through;
   margin-top: 12px;
+  margin-left: 50px;
+  margin-right: 43px;
+  text-align: center;
   order: 2;
-  align-self: center;
 }
 
 .item-price-sale {
@@ -1378,8 +1398,11 @@ input[type="radio"].visually-hidden {
   text-align: center;
   margin: 10px 43px 21px 43px;
   padding: 11px 5px 9px 25px;
+  border-right: 1px solid #ee3643;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
   order: 3;
   position: relative;
 }
