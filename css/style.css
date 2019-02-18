@@ -1239,7 +1239,7 @@ input[type="radio"].visually-hidden {
 .item-cart {
   border: 1px solid #e5e5e5;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   width: 220px;
   position: relative;
   display: flex;
@@ -1374,11 +1374,26 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   display: block;
   box-sizing: border-box;
-  width: 125px;
+  width: 119px;
   text-align: center;
-  margin: 10px auto 21px auto;
-  padding: 9px 5px 11px 15px;
+  margin: 10px 43px 21px 43px;
+  padding: 11px 5px 9px 25px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
   order: 3;
+  position: relative;
+}
+
+.item-price-sale::after {
+  content: "";
+  position: absolute;
+  right: -38px;
+  bottom: 0px;
+  border: 19px solid #ffffff;
+  border-right-color: transparent;
+  border-left-color: #ee3643;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
 }
 
 .filter {
@@ -1439,7 +1454,25 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-buttons {
-  padding: 30px 10px 20px 10px;
+  padding: 30px 10px 20px 20px;
+  position: relative;
+}
+
+.filter-buttons button {
+  position: relative;
+  z-index: 1;
+}
+
+.filter-buttons button:nth-child(2) {
+  margin-left: 114px;
+}
+
+.filter-buttons svg {
+  width: 170px;
+  height: 2px;
+  position: absolute;
+  left: 30px;
+  top: 39px;
 }
 
 .filter-input {
@@ -1456,7 +1489,7 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 28px;
   width: 86px;
-  padding: 5px 5px 5px 5px;
+  padding: 4px 5px 6px 7px;
   text-align: center;
 }
 
@@ -1504,9 +1537,10 @@ input[type="radio"].visually-hidden {
   fill: #b5b5b5;
 }
 
-.filter-manufacturer span {
+.filter-manufacturer span,
+.radio-filter + label span {
   position: absolute;
-  left: 30px;
+  left: 38px;
 }
 
 .filter-charge svg {
@@ -1521,11 +1555,6 @@ input[type="radio"].visually-hidden {
 .radio-filter + label svg {
   position: absolute;
   bottom: -2px;
-}
-
-.radio-filter + label span {
-  position: absolute;
-  left: 30px;
 }
 
 .radio-filter + label svg:first-child {
@@ -1619,6 +1648,10 @@ input[type="radio"].visually-hidden {
 
 .sort-links-arrows a:active svg {
   fill: #ee3643;
+}
+
+.pagination {
+  margin-top: 10px;
 }
 
 .pagination a.current-page {
