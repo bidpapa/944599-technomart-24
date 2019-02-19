@@ -1255,7 +1255,11 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.item-cart:nth-child(3n) {
+.catalog-main .item-cart:nth-child(3n) {
+  margin-right: 0;
+}
+
+.index-main .item-cart:nth-child(4n) {
   margin-right: 0;
 }
 
