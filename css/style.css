@@ -1507,7 +1507,8 @@ input[type="radio"].visually-hidden {
   height: 2px;
   position: absolute;
   left: 30px;
-  top: 39px;
+  top: 40px;
+  overflow: visible;
 }
 
 .filter-input {
