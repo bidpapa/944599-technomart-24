@@ -13,6 +13,7 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .modal,
@@ -1239,7 +1240,6 @@ input[type="radio"].visually-hidden {
 }
 
 .items-article-container {
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -1247,11 +1247,16 @@ input[type="radio"].visually-hidden {
   border: 1px solid #e5e5e5;
   box-sizing: border-box;
   margin-bottom: 19px;
+  margin-right: 20px;
   width: 220px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.item-cart:nth-child(3n) {
+  margin-right: 0;
 }
 
 .new::before {
@@ -1271,6 +1276,8 @@ input[type="radio"].visually-hidden {
 }
 
 .item-cart-img {
+  width: 218px;
+  height: 170px;
   position: absolute;
   z-index: 1;
   top: 0;
