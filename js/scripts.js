@@ -22,7 +22,7 @@ if (window.location.toString().indexOf('index.html') > 0) {
 
 }
 
-else
+else {
 
   var items = document.querySelectorAll(".buy");
 
@@ -39,3 +39,4 @@ else
   function resetBasket() {
     document.getElementById("modal-basket").style.display="none";
   }
+}
