@@ -295,8 +295,8 @@
           <div class="company-aboutus">
             <h2>Компания «Техномарт»</h2>
             <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-            <p>Мы можем доставить ваш товар в самые отдаленные точки России!
-            <br>Техномарт работает со многими транспортными компаниями: </p>
+            <p class="delivery-rules">Мы можем доставить ваш товар в самые отдаленные точки России!
+            Техномарт работает со многими транспортными компаниями: </p>
             <ul class="company-list-partners">
               <li>Деловые линии</li>
               <li>Автотрейдинг</li>
@@ -308,11 +308,11 @@
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис</p>
             <div class="company-contacts-map">
-              <a onclick="document.querySelector('.modal-map').style.display='block';" href="#" class="company-contacts-map-ref">
+              <a href="#" class="company-contacts-map-ref" id="company-contacts-map-ref">
                 <img src="img/mapmini.jpg" alt="г.Санкт-Петербург, ул. Б. Конюшенная д.19/8" width="315" height="157">
               </a>
             </div>
-            <a onclick="document.querySelector('.modal-contact').style.display='block';" href="#" class="company-contacts-ref">
+            <a href="#" class="company-contacts-ref" id="company-contacts-ref">
               Заблудились? Напишите нам!
             </a>
           </div>
@@ -332,24 +332,24 @@
               </div>
               <div class="modal-contact-area flex contact-letterarea">
                 <label for="contact-form-letteruser">Текст письма: </label>
-                <textarea form="contact-form" id="contact-form-letteruser" rows="3" cols="10" placeholder="В свободной форме" name="contact-form-letteruser"></textarea>
+                <textarea id="contact-form-letteruser" rows="3" cols="10" placeholder="В свободной форме" name="contact-form-letteruser"></textarea>
               </div>
             </div>
             <button type="submit" name="submit-contact-form">Отправить</button>
           </form>
-          <button onclick="document.querySelector('.modal-contact').style.display='none';" type="button" class="reset-modal">
-              <span class="visually-hidden">
+          <button type="button" class="reset-modal" id="reset-contact">
+            <span class="visually-hidden">
                 Закрыть
-              </span>
+            </span>
           </button>
         </section>
 
-        <section class="modal modal-map">
+        <section class="modal modal-map" id="modal-map">
           <h2 class="visually-hidden">Наш адрес</h2>
           <img src="img/mapbig.jpg" alt="г.Санкт-Петербург, ул. Б. Конюшенная д.19/8" width="940" height="450">
-           <button type="button" class="reset-modal" onclick="document.querySelector('.modal-map').style.display='none';">
+           <button type="button" class="reset-modal" id="reset-map">
             <span class="visually-hidden">
-
+              Закрыть
             </span>
           </button>
         </section>
@@ -415,6 +415,6 @@
       </section>
     </footer>
 
-  <script> </script>
+  <script src="js/scripts.js"></script>
   </body>
 </html>
