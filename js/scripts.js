@@ -20,6 +20,22 @@ if (window.location.toString().indexOf('index.html') > 0) {
     document.getElementById("modal-map").style.display="none";
   }
 
+  var items = document.querySelectorAll(".buy");
+
+  for(var i = 0; i < items.length; ++i)
+  {
+    items[i].onclick = function() {itemAdded()};
+  }
+
+  function itemAdded() {
+    document.getElementById("modal-basket").style.display="block";
+  }
+
+  document.getElementById("reset-basket").onclick = function() {resetBasket()};
+  function resetBasket() {
+    document.getElementById("modal-basket").style.display="none";
+  }
+
 }
 
 else {

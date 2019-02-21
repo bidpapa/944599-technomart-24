@@ -1533,9 +1533,11 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-price {
+  box-sizing: border-box;
+  width: 95px;
+  height: 38px;
   font-size: 17px;
   line-height: 28px;
-  width: 86px;
   padding: 4px 5px 6px 7px;
   text-align: center;
 }
@@ -1660,6 +1662,27 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 }
 
+a.active-sort-link {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+a.active-sort-link svg {
+  fill: #ee3643;
+}
+
+a.active-sort-link:hover,
+a.active-sort-link:focus,
+a.active-sort-link:active {
+  color: #ee3643;
+}
+
+a.active-sort-link:hover svg,
+a.active-sort-link:focus svg,
+a.active-sort-link:active svg {
+  fill: #ee3643;
+}
+
 .sort-links-arrows {
   flex-grow: 1;
 }
@@ -1681,12 +1704,12 @@ input[type="radio"].visually-hidden {
   vertical-align: text-top;
 }
 
-.sort-links-arrows a:hover svg,
-.sort-links-arrows a:focus svg {
+.sort-link:hover svg,
+.sort-link:focus svg {
   fill: #231f20;
 }
 
-.sort-links-arrows a:active svg {
+.sort-link:active svg {
   fill: #ee3643;
 }
 
@@ -1847,13 +1870,23 @@ input[type="radio"].visually-hidden {
 .modal-contact-area textarea {
   font-size: 13px;
   line-height: 18px;
-  color: #a9a9a9;
+  color: #000000;
   box-sizing: border-box;
   padding: 5px 5px 5px 17px;
   min-width: 220px;
   height: 38px;
   border: 2px solid #dee3e4;
   border-radius: 3px;
+}
+
+.modal-contact-area input::placeholder,
+.modal-contact-area textarea::placeholder {
+  color: #a9a9a9;
+}
+
+.modal-contact-area input:-ms-input-placeholder,
+.modal-contact-area textarea:-ms-input-placeholder {
+    color: #a9a9a9;
 }
 
 .modal-contact-area textarea {
