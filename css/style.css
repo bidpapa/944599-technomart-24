@@ -1074,7 +1074,7 @@ input[type="radio"].visually-hidden {
 
 .main-logo-footer {
   background-color: #ee3643;
-  border-bottom: 5px solid #b52933;
+  box-shadow: 0 5px 0 0 #b52933;
   display: block;
   box-sizing: border-box;
   width: 220px;
@@ -1540,9 +1540,10 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.filter-manufacturer {
+.filter-manufacturer,
+.filter-charge {
   position: relative;
-  left: -20px;
+  padding-left: 35px;
 }
 
 .filter-manufacturer::before {
@@ -1551,8 +1552,7 @@ input[type="radio"].visually-hidden {
   width: 26px;
   height: 25px;
   position: absolute;
-  left: 20px;
-  bottom: -23px;
+  left: 0;
   opacity: 0.8;
 }
 
@@ -1574,8 +1574,8 @@ input[type="radio"].visually-hidden {
   width: 25px;
   height: 25px;
   position: absolute;
-  left: 20px;
-  bottom: -23px;
+  left: 0;
+  bottom: -3px;
   opacity: 0.8;
 }
 
@@ -1604,11 +1604,6 @@ input[type="radio"].visually-hidden {
 .radio-filter + label span {
   position: absolute;
   left: 54px;
-}
-
-.radio-filter + label {
-  position: relative;
-  left: -20px;
 }
 
 .filter h2 {
