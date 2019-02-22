@@ -37,6 +37,7 @@ if (window.location.toString().indexOf('index.html') > 0) {
   contactFormRef.addEventListener("click", function(evt) {
     evt.preventDefault();
     document.getElementById("modal-contact").style.display="block";
+    contactPopup.classList.add("modal-appearence");
     if (storageNameUser && storageEmailUser) {
       nameUser.value = storageNameUser;
       emailUser.value = storageEmailUser;
