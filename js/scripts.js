@@ -101,26 +101,6 @@ if (window.location.toString().indexOf('index.html') > 0) {
 
   /* Слайдер на главной */
 
-  /* var firstDot = document.querySelector('.slider-dot:first-child');
-  var secondDot = document.querySelector('.slider-dot:last-child');
-
-  if (document.querySelector('.sld2').classList.contains('inactive')) {
-    firstDot.classList.add('active-dot');
-    secondDot.classList.remove('active-dot');
-  }
-
-  else if (document.querySelector('.sld1').classList.contains('inactive')) {
-    secondDot.classList.add('active-dot');
-    firstDot.classList.remove('active-dot');
-  }
-
-  function dotToggle() {
-    var Dots = document.querySelectorAll('.slider-dot')
-    for (var i = 0; i < 2; i++) {
-    Dots[i].classList.toggle('active-dot');
-    }
-  } */
-
   var Slides = document.querySelectorAll('.offers-slide');
   var Dots = document.querySelectorAll('.slider-dot');
   var btnBack = document.querySelector('.slider-back-button');
@@ -128,6 +108,12 @@ if (window.location.toString().indexOf('index.html') > 0) {
   var Slider = document.querySelector('.offers-slider');
   numberDots = Dots.length;
   numberSlides = Slides.length;
+
+  for (var i = 0; i < numberSlides; i++) {
+    if (!Slides[i].classList.contains('inactive')) {
+      Dots[i].classList.add('active-dot');
+    }
+  }
 
   /* Кнопка Назад */
 
