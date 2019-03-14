@@ -887,7 +887,7 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.button2:checked ~ .services-slides .slide-garancy {
+.button2:checked ~ .services-slides .slide-guarantee {
   display: block;
 }
 
@@ -922,7 +922,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-delivery,
-.slide-garancy,
+.slide-guarantee,
 .slide-credit {
   display: none;
   height: 100%;
@@ -941,8 +941,8 @@ input[type="radio"].visually-hidden {
   background: url(../img/delivery.png) no-repeat 170px 20px;
 }
 
-.slide-garancy {
-  background: url(../img/garancy.png) no-repeat  245px 20px;
+.slide-guarantee {
+  background: url(../img/guarantee.png) no-repeat  245px 20px;
 }
 
 .slide-credit {
@@ -958,7 +958,7 @@ input[type="radio"].visually-hidden {
   width: 300px;
 }
 
-.slide-garancy p {
+.slide-guarantee p {
   width: 385px;
 }
 
